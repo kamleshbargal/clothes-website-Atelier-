@@ -969,9 +969,9 @@ function addFullOutfitBundle() {
 async function syncWithBackend() {
     let backendProducts = null;
 
-    // Try primary 127.0.0.1:5000 first, fallback to localhost:5000
     const endpoints = [
         `${window.location.origin}/api/products`,
+        "https://clothes-website-atelier.onrender.com/api/products",
         "http://127.0.0.1:5000/api/products",
         "http://localhost:5000/api/products"
     ];
